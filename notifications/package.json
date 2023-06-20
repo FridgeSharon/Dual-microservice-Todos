@@ -2,8 +2,9 @@
   "name": "notifications",
   "version": "1.0.0",
   "description": "the notifications microservice",
-  "main": "app.js",
+  "main": "notificationsMS.js",
   "scripts": {
+    "start": "node todosMS.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Guy Sharon",
