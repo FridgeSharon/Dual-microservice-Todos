@@ -4,6 +4,7 @@ Simple dual-microservice notificationsMS to manage to-dos
 ## How to?
 - run `npm i` in the main project folder.
 - use `npm run start` in each of the sub folders/project: `notifications` and `todos`.
+- Feel free to import the included `Paybox Todos.postman_collection.json` into your Postman, it already has all the requests for Todos.
 
 ## About the timer:
 - using Node Chron job, the scheduling is done by patterns.
@@ -15,6 +16,7 @@ Simple dual-microservice notificationsMS to manage to-dos
 - Returning proper HTTP codes on missing info or failures instead of throwing errors.
 - Extracting some shared code between the two Microservices into Node Modules.
 - Better validation of input to prevent injections and arbitrary code executions.
+- Normalizing the Date format, and making it localTime (currently GMT)
 
 All of these could be implemented given a few more hours, I decided to serve this code as it is in this state.
 
@@ -25,3 +27,4 @@ Due to free tier limitations, both microservices use the same DB but different c
 I created separate usernames for each microservice to connect to the DB.  
 Connection is not limited to any specific IP, so it should work from anywhere in the world.
 In real services, the connection between these two microservices would be internal, and not open to the public.
+The DB already contains some Todos and Reminders I created for testing, create/delete/update as you wish.
