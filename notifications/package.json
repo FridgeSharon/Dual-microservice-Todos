@@ -4,7 +4,7 @@
   "description": "the notifications microservice",
   "main": "notificationsMS.js",
   "scripts": {
-    "start": "node todosMS.js",
+    "start": "node notificationsMS.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Guy Sharon",
